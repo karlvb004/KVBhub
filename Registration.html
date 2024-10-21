@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Experiment</title>
+</head>
+<body>
+    <h1>Register Here</h1>
+    
+    <form action="http://www.google.com">
+    <div>
+        <label>First Name: <input name="name" type="text" placeholder="John" required></label>
+        <label>Last Name: <input name="surname" type="text" placeholder="Smith" required></label>
+    </div>
+
+    <div>
+      <label for="radio-choice-1">Male</label>
+      <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+
+      <label for="radio-choice-2">Female</label>
+      <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+
+      <label for="radio-choice-3">Other</label>
+      <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+    </div>
+
+    <div>
+    <label>Email: <input name="email" type="email" placeholder=" your email" required></label>
+        <label>Password: <input name="password" type="password" placeholder="your password" minlength="5" maxlength="10" required></label>
+    </div>
+
+    <div>
+        <label>Birthday: <select name="select-choice" id="select-choice"></label>
+          <option value="0" selected disabled>Month</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+        </select>
+  
+        <select name="birthday-day" id="day">
+          <option value="0" selected disabled>Day</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+        </select>
+  
+        <select name="birthday-year" id="year">
+          <option value="0" selected disabled>Year</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+    
+        </select>
+      </div>
+
+      <div>
+        <label>I agree to the terms and conditions <input type="checkbox" name="checkbox" id="checkbox" /></label>
+      </div>
+  
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+</body>
+</html>
