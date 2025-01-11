@@ -1,0 +1,87 @@
+/* Overall styling */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; 
+    background-color: darkslategrey; 
+    color: white; 
+    padding: 0 20px; 
+}
+
+/* Layout */
+.layout {
+    max-width: 1200px; 
+    width: 100%;
+    margin: 20px auto; 
+    padding: 0 100px; 
+}
+
+/* Title and Introduction */
+.text-box h1 {
+    font-size: 2.5em;
+    font-family: 'Source Sans 3', sans-serif; 
+    font-weight: 700; 
+    margin-bottom: 20px;
+    padding: 20px; 
+}
+
+.text-box p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif; 
+    padding: 40px; 
+    margin: 0; 
+}
+
+/* Images */
+.image-box {
+    width: 100%; 
+    max-width: 800px;
+    height: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Phone screen layout */
+@media (max-width: 767px) {
+    .text-box h1 {
+        font-size: 2em; 
+        padding: 15px; 
+    }
+    .text-box p {
+        font-size: 1em; 
+        padding: 15px; 
+    }
+    .layout {
+        padding: 0 10px; 
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    padding: 20px 0; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 80%; 
+}
+
+.social-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 10px; 
+}
+
+.social-icon:hover {
+    color: grey;
+}
